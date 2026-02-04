@@ -97,6 +97,7 @@ terraform-aws-infra/
 
 ## Modules
 Each module in the `modules/` directory is designed to manage specific AWS resources. Refer to the individual module README files for detailed usage instructions and variable definitions.
+This effective list is based on the official BOTO3 page: [AWS Services List](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html)
 
 ---
 ## Environments

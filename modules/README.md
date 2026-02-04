@@ -1,4 +1,6 @@
-# List of the AWS Services
+# List of the AWS Services 
+Based on the official BOTO3 page: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html
+
 This module contains Terraform configurations for the following AWS services:
 - Amazon accessanalyzer
 - Amazon account
