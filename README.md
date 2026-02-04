@@ -46,6 +46,8 @@ terraform-aws-infra/
 - Terraform v1.0 or higher
 - AWS CLI configured with appropriate credentials
 - An AWS account with necessary permissions to create resources
+---
+
 ### Installation
 1. Clone the repository:
    ```bash
@@ -61,14 +63,38 @@ terraform-aws-infra/
     cd environments/development  # or staging/production
      ```
 4. Review and customize `terraform.tfvars` for your environment.
-5. Apply the Terraform configuration:
+
+5. Plan the workload changes
+    ```bash
+    terraform plan
+     ```
+6. Verify the workload changes
+    ```bash
+    terraform show
+     ```
+7. Analyse the workload changes
+    ```bash
+    terraform graph
+     ```
+8. Test the workload before applying
+    ```bash
+    terraform validate
+     ```
+9. Apply the Terraform workload configuration:
     ```bash
     terraform apply
      ```
+10. Confirm if all the workload is applied
+    ```bash
+    terraform show
+     ```
+---
+
 ### Note
 - Always review the plan output before applying changes to avoid unintended modifications.
 - Use version control to manage changes to your Terraform configurations.
 ---
+
 ## Modules
 Each module in the `modules/` directory is designed to manage specific AWS resources. Refer to the individual module README files for detailed usage instructions and variable definitions.
 
@@ -78,7 +104,7 @@ The `environments/` directory contains separate configurations for different dep
 
 ---
 
-# Terraform files explained
+## Terraform files explained
 - `main.tf`: The primary configuration file where resources are defined.
 - `variables.tf`: Defines input variables for the Terraform configuration.
 - `outputs.tf`: Specifies the outputs of the Terraform configuration.
@@ -88,7 +114,7 @@ The `environments/` directory contains separate configurations for different dep
 - `README.md`: Documentation file explaining the repository structure and usage.
 
 ---
-# Terraform directories explained
+## Terraform directories explained
 - `modules/`: Contains reusable Terraform modules for different AWS components.
 - `environments/`: Contains environment-specific configurations for development, staging, and production.
 - `development/`, `staging/`, `production/`: Subdirectories under `environments/` for different deployment stages, each with its own configuration files.
