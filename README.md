@@ -1,5 +1,6 @@
-# README.md for Terraform AWS Infrastructure
+# README.md for Terraform AWS Infrastructure   
 This repository contains Terraform configurations to provision and manage AWS infrastructure components. It is structured to support modularity and environment-specific deployments.
+
 ---
 
 ## Repository Structure
@@ -70,9 +71,11 @@ terraform-aws-infra/
 ---
 ## Modules
 Each module in the `modules/` directory is designed to manage specific AWS resources. Refer to the individual module README files for detailed usage instructions and variable definitions.
+
 ---
 ## Environments
 The `environments/` directory contains separate configurations for different deployment stages. Each environment has its own state and variable definitions to ensure isolation and manageability.
+
 ---
 
 # Terraform files explained
@@ -89,17 +92,21 @@ The `environments/` directory contains separate configurations for different dep
 - `modules/`: Contains reusable Terraform modules for different AWS components.
 - `environments/`: Contains environment-specific configurations for development, staging, and production.
 - `development/`, `staging/`, `production/`: Subdirectories under `environments/` for different deployment stages, each with its own configuration files.
+
 ---
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure that your code adheres to best practices and includes appropriate documentation.
+
 ---
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 ---
 
 ## Contact
 For questions or support, please open an issue in the repository or contact the maintainer at
+
 ---
 
